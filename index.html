@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VÉRA — Modern Fashion</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">VÉRA</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="cart-btn" onclick="openCart()">
+      🛍 Cart <span id="cartCount">0</span>
+    </button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+      <p class="small-title">NEW SEASON 2026</p>
+
+      <h1>
+        Dress<br>
+        Your <span>Story.</span>
+      </h1>
+
+      <p>
+        Timeless silhouettes, effortless elegance,
+        and fashion designed for every version of you.
+      </p>
+
+      <a href="#shop" class="main-btn">SHOP NOW</a>
+    </div>
+
+  </section>
+
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <p>
+      “Fashion is not just what you wear.  
+      It is how you tell the world who you are.”
+    </p>
+  </section>
+
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="collections">
+
+    <div class="section-heading">
+      <p>EXPLORE</p>
+      <h2>Shop By Category</h2>
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80">
+        <div>
+          <h3>Women</h3>
+          <p>Elegant. Confident. Unforgettable.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=80">
+        <div>
+          <h3>Men</h3>
+          <p>Classic style with a modern edge.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80">
+        <div>
+          <h3>New Arrivals</h3>
+          <p>Fresh looks for a fresh season.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <section class="products" id="shop">
+
+    <div class="section-heading">
+      <p>CURATED FOR YOU</p>
+      <h2>Featured Collection</h2>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=700&q=80">
+          <span>NEW</span>
+        </div>
+
+        <h3>Silk Evening Dress</h3>
+        <p>Elegant Collection</p>
+        <strong>₹3,999</strong>
+
+        <button onclick="addToCart('Silk Evening Dress',3999)">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80">
+        </div>
+
+        <h3>Classic Beige Blazer</h3>
+        <p>Premium Collection</p>
+        <strong>₹4,499</strong>
+
+        <button onclick="addToCart('Classic Beige Blazer',4499)">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80">
+          <span>BESTSELLER</span>
+        </div>
+
+        <h3>Minimal White Dress</h3>
+        <p>Everyday Luxury</p>
+        <strong>₹2,999</strong>
+
+        <button onclick="addToCart('Minimal White Dress',2999)">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80">
+        </div>
+
+        <h3>Premium Denim Jacket</h3>
+        <p>Urban Collection</p>
+        <strong>₹2,499</strong>
+
+        <button onclick="addToCart('Premium Denim Jacket',2499)">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BRAND QUOTE -->
+  <section class="brand-banner">
+
+    <div>
+      <p>THE VÉRA PHILOSOPHY</p>
+
+      <h2>
+        Wear what makes<br>
+        you feel <i>beautiful.</i>
+      </h2>
+
+      <button onclick="showMessage()">
+        DISCOVER VÉRA
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div>
+      <p>OUR STORY</p>
+
+      <h2>Made for the woman<br>you are becoming.</h2>
+    </div>
+
+    <p>
+      VÉRA is a modern fashion label created for people
+      who believe style should feel effortless, personal
+      and timeless.
+
+      From everyday essentials to statement pieces,
+      every collection is designed to help you express
+      your individuality.
+    </p>
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+
+    <h2>Stay in Style</h2>
+
+    <p>
+      Get new collection updates, exclusive offers
+      and fashion inspiration.
+    </p>
+
+    <div>
+      <input type="email" id="email" placeholder="Enter your email">
+      <button onclick="subscribe()">SUBSCRIBE</button>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">VÉRA</div>
+
+    <p>
+      © 2026 VÉRA Fashion. All Rights Reserved.
+    </p>
+
+    <div class="social">
+      Instagram · Pinterest · Facebook
+    </div>
+
+  </footer>
+
+
+  <!-- CART -->
+  <div id="cartModal" class="cart-modal">
+
+    <div class="cart-box">
+
+      <button class="close" onclick="closeCart()">×</button>
+
+      <h2>Your Cart</h2>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-total">
+        Total: ₹<span id="cartTotal">0</span>
+      </div>
+
+      <button class="checkout" onclick="checkout()">
+        CHECKOUT
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>                                                </html>
